@@ -4,25 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Awien DevHub - IT student passionate about web development, programming, and cybersecurity.">
-    <title>Awien DevHub | Learn. Build. Create.</title>
+    <meta name="description" content="Awien DevHub — web development, programming, IT projects and cybersecurity.">
+    <title>Awien DevHub | My Tech World</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-
-    <header class="header">
-        <a href="#home" class="logo">Awien<span>DevHub</span></a>
-
-        <button id="menuButton" aria-label="Toggle navigation">
-            ☰
-        </button>
-
-        <nav>
-            <ul id="navigation">
+    <header class="site-header">
+        <nav class="navbar container">
+            <a class="logo" href="#home">Awien<span>DevHub.</span></a>
+            <button id="menuButton" class="menu-button"
+                    aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <ul id="navigation" class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -31,105 +27,179 @@
 
     <main>
         <section id="home" class="hero">
-            <h2>WELCOME TO MY TECH WORLD</h2>
-            <h3>Learn. Build. Create.</h3>
-            <p>
-                Welcome to Awien DevHub, my online home for technology,
-                web development, programming, and cybersecurity.
-            </p>
-            <a href="#about" class="button">Discover More</a>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="eyebrow">WELCOME TO MY TECH WORLD</p>
+                    <h1>Learn. Build. <span>Create.</span></h1>
+                    <p class="hero-description">
+                        I'm Awien@2000, an IT student exploring web development,
+                        programming, networking and cybersecurity.
+                        I'm learning by building practical projects.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projects">Explore Projects</a>
+                        <a class="button button-outline" href="#contact">Get in Touch</a>
+                    </div>
+                    <p class="small-note">Curious mind. Growing skills. Building for the future.</p>
+                </div>
+
+                <div class="profile-card">
+                    <img class="profile-photo"
+                         src="images/profile.jpg"
+                         alt="Awien's profile photo"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+                    <div class="photo-placeholder" style="display:none">
+                        <span>YOUR PHOTO</span>
+                        <small>Add your photo as images/profile.jpg</small>
+                    </div>
+                    <p class="profile-label">IT STUDENT & ASPIRING DEVELOPER</p>
+                    <h2>Building my tech journey</h2>
+                    <p>Web development · Programming · Cybersecurity</p>
+                </div>
+            </div>
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Hello! I am Awien@2000, an IT student passionate about
-                technology and learning new digital skills.
-            </p>
-            <p>
-                I am learning to build websites, write code, solve
-                technical problems, and explore cybersecurity. My goal
-                is to improve my skills by creating practical projects.
-            </p>
-        </section>
-
-        <section id="technologies">
-            <h2>Technologies I Am Learning</h2>
-            <ul>
-                <li>HTML - building website structure</li>
-                <li>CSS - styling websites</li>
-                <li>JavaScript - adding interactivity</li>
-                <li>Python - programming</li>
-                <li>Git and GitHub - managing code</li>
-                <li>Cybersecurity - learning digital security</li>
-            </ul>
-        </section>
-
-        <section id="projects">
-            <h2>My Projects</h2>
-
-            <article>
-                <h3>Awien DevHub Website</h3>
+        <section id="about" class="section container">
+            <p class="eyebrow">GET TO KNOW ME</p>
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-card">
                 <p>
-                    My personal portfolio website, built to practise
-                    web development and share my learning journey.
+                    Hello! I'm Awien@2000, an IT student passionate about
+                    technology and learning new digital skills. I'm developing
+                    my knowledge by practising HTML, CSS, JavaScript, Python,
+                    and other IT tools.
                 </p>
-            </article>
-
-            <article>
-                <h3>Weather Website</h3>
                 <p>
-                    A weather project that helps me practise programming
-                    and displaying weather information.
-                </p>
-            </article>
-
-            <article>
-                <h3>Future IT Projects</h3>
-                <p>
-                    I plan to create more projects in web development,
-                    programming, and cybersecurity as I learn.
-                </p>
-            </article>
-        </section>
-
-        <section id="contact" class="contact">
-            <h2>Contact Awien DevHub</h2>
-            <p>
-                Do you have a website idea, a project, or an enquiry?
-                You can contact me using the details below.
-            </p>
-
-            <div class="contact-details">
-                <p><strong>Name:</strong> Awien@2000</p>
-
-                <p>
-                    <strong>Email:</strong>
-                    <a href="mailto:achuilawien@gmail.com">
-                        achuilawien@gmail.com
-                    </a>
-                </p>
-
-                <p>
-                    <strong>Phone:</strong>
-                    <a href="tel:0180698090">0180698090</a>
-                </p>
-
-                <p>
-                    <strong>Location:</strong>
-                    Mombasa, Kongowea, near Tuka Road, Nyali, Kenya
+                    My goal is to create useful websites and software,
+                    strengthen my problem-solving skills, and keep learning
+                    about cybersecurity.
                 </p>
             </div>
+        </section>
 
-            <p>
-                <strong>Available for website project enquiries.</strong>
-            </p>
+        <section id="skills" class="section section-dark">
+            <div class="container">
+                <p class="eyebrow">WHAT I'M LEARNING</p>
+                <h2 class="section-title">My <span>Technologies</span></h2>
+                <div class="skills-grid">
+                    <article class="skill-card"><span>01</span><h3>HTML & CSS</h3><p>Building and styling web pages.</p></article>
+                    <article class="skill-card"><span>02</span><h3>JavaScript</h3><p>Adding interactive features to websites.</p></article>
+                    <article class="skill-card"><span>03</span><h3>Python</h3><p>Learning programming and web applications.</p></article>
+                    <article class="skill-card"><span>04</span><h3>Git & GitHub</h3><p>Tracking code and publishing projects.</p></article>
+                    <article class="skill-card"><span>05</span><h3>Networking</h3><p>Understanding networks and connectivity.</p></article>
+                    <article class="skill-card"><span>06</span><h3>Cybersecurity</h3><p>Learning how to protect systems and data.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section container">
+            <p class="eyebrow">WHAT I'M BUILDING</p>
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+            <p class="section-intro">Explore my learning projects and websites.</p>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="images/devhub-project.jpg" alt="Awien DevHub portfolio website"
+                         onerror="this.src='https://placehold.co/800x450/101b35/55b9ff?text=Awien+DevHub'">
+                    <div class="project-content">
+                        <p class="project-type">WEB DEVELOPMENT</p>
+                        <h3>Awien DevHub</h3>
+                        <p>My personal portfolio for sharing my skills, projects and IT journey.</p>
+                        <a class="project-link" href="https://awien-devhub.vercel.app/" target="_blank" rel="noopener noreferrer">Visit Website ↗</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/weather-project.jpg" alt="Weather website project"
+                         onerror="this.src='https://placehold.co/800x450/101b35/55b9ff?text=Weather+Website'">
+                    <div class="project-content">
+                        <p class="project-type">PYTHON & FLASK</p>
+                        <h3>Weather Website</h3>
+                        <p>A weather website project built while learning Python and web development.</p>
+                        <a class="project-link" href="https://github.com/AwienAgiu/winni02" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/nile-project.jpg" alt="Nile Website project"
+                         onerror="this.src='https://placehold.co/800x450/101b35/55b9ff?text=Nile+Website'">
+                    <div class="project-content">
+                        <p class="project-type">HTML & CSS</p>
+                        <h3>Nile Website</h3>
+                        <p>A website project where I practise creating and publishing web pages.</p>
+                        <a class="project-link" href="https://github.com/AwienAgiu/NILE-WEBSITE" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/cybersecurity-project.jpg" alt="Cybersecurity learning project"
+                         onerror="this.src='https://placehold.co/800x450/101b35/55b9ff?text=Cybersecurity'">
+                    <div class="project-content">
+                        <p class="project-type">LEARNING PROJECT</p>
+                        <h3>Cybersecurity Lab</h3>
+                        <p>A future learning project for practising safe security and networking skills.</p>
+                        <span class="project-link coming-soon">Coming Soon</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="center-action">
+                <a class="button button-outline" href="https://github.com/AwienAgiu"
+                   target="_blank" rel="noopener noreferrer">Explore My GitHub ↗</a>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-dark">
+            <div class="container">
+                <p class="eyebrow">LET'S CONNECT</p>
+                <h2 class="section-title">Get in <span>Touch</span></h2>
+                <p class="section-intro">Have a project idea or question? Send me a message.</p>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Contact Details</h3>
+                        <p><strong>Name:</strong> Awien@2000</p>
+                        <p><strong>Email:</strong>
+                            <a href="mailto:achuilawien@gmail.com">achuilawien@gmail.com</a>
+                        </p>
+                        <p><strong>Phone:</strong>
+                            <a href="tel:0180698090">0180698090</a>
+                        </p>
+                        <p><strong>Location:</strong> Mombasa, Kenya</p>
+                        <p class="small-note">Only share a more precise location publicly if you're comfortable doing so.</p>
+                    </div>
+
+                    <form id="contactForm" class="contact-form"
+                          action="https://formspree.io/f/maeqgbok" method="POST">
+                        <label for="name">Your Name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" required>
+
+                        <label for="email">Your Email</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required>
+
+                        <label for="subject">Subject</label>
+                        <input id="subject" name="subject" type="text" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                        <button id="submitButton" class="button button-primary" type="submit">Send Message</button>
+                        <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Awien DevHub. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <a class="logo" href="#home">Awien<span>DevHub.</span></a>
+            <p>Learn. Build. Create.</p>
+            <a href="https://github.com/AwienAgiu" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <p>© <span id="year">2026</span> Awien DevHub. All rights reserved.</p>
+        </div>
     </footer>
-
 </body>
 </html>
